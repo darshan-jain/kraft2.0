@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Poppins">
+    <title>Kraft Retail Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+   
+    
+
+    <div class="container">
+        <video autoplay muted loop id="myVideo" style="width: 100%; ">
+            <source src="assets/herovideo.mp4" type="video/mp4">
+          </video>
+    </div>
+
+    <img src = "assets/navbar/menu.png" id ="menuIcon">
+
+    <div class="menu-box" id="menuBox">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="clients.html">clientele</a></li>
+            <li><a href="reserve.html">reservation</a></li>
+        </ul>
+    </div>
+    
+
+   
+    <div class="container1">
+        <img src="assets/services/dinein.jpg" alt="Snow" style="width:100%;">
+        <div class="centered" style ="font-size: 10vw; font-weight: 600;">dine-in</div>
+        <p class="centered_sbelow" style="font-size: 1.5vw; font-weight: 500;">Celebrate the moments that matter!</p>
+       
+
+
+      </div>
+
+      <div class="container1">
+        <img src="assets/services/teamlunch.jpg" alt="Snow" style="width:100%;">
+        <div class="centered2" style ="font-size: 10vw; font-weight: 600;">events</div>
+        <p class="centered_ssbelow" style="font-size: 1.5vw; font-weight: 500;">Get the latest of events happening in town.</p>
+
+
+      </div>
+
+      <div class="container1">
+        <img src="assets/services/catering.jpg" alt="Snow" style="width:100%;">
+       <div class="centered2" style ="font-size: 10vw; font-weight: 600; color: whitesmoke;">catering</div>
+        <p class="centered_sbelow" style="font-size: 1.5vw; font-weight: 500;">Crafting flavors, creating memories - indulge in our culinary artistry.</p>
+       
+
+      </div>
+
+      <div class="container1">
+        <img src="assets/services/retail.jpg" alt="Snow" style="width:100%;">
+       <div class="centered2" style ="font-size: 10vw; font-weight: 600; color: whitesmoke;">retail</div>
+        <p class="centered_sssbelow" style="font-size: 1.5vw; font-weight: 500;">Shop in style, dine with delight</p>
+
+
+      </div>
+
+      
+      <br>
+      <br>
+
+      <div class="container4">
+        <p style="font-size: 450%; font-weight: 900; color: brown; text-align: center;"> Explore our services </p>
+        <p style="text-align: justify;"> Indulge in a tantalizing fusion of flavors at our restaurant, where culinary artistry meets cultural diversity. From sizzling stir-fries to aromatic curries, our diverse menu satisfies every palate. Elevate your gatherings with our versatile venue space, perfect for events of any size. Let us bring the feast to you with our impeccable catering services, ensuring your special occasions are filled with exquisite tastes and seamless service.</p><br>
+       <a href="services.html"> <button class="servbutton" style="width: 100%; padding:2vw; border-radius: 25px; color: white;background-color: brown;"> Unlock your SoulFuel Here &rarr; </button></a>
+
+      </div>
+
+      <br>
+      <br>
+      
+
+      <div class="container4">
+        <p style="font-size: 450%; font-weight: 900; color: brown; text-align: center;"> Contact us </p>
+        <p style="text-align: justify;">
+            Embark on a delightful culinary journey at our restaurants located at CMRL HQ, Nandanam, and ECR, Kanathur. Contact us for reservations, event bookings, catering inquiries, and more. Follow our Instagram handle @kraft_dine to stay updated on our diverse culinary experiences, events, and captivating behind-the-scenes moments. Celebrate the joy of food and culture with us through captivating visuals—join our community today!</p>
+            <br>
+            <br>
+       <a href="tel://+918754476660"> <button class="servbutton" style="width: 100%; padding:2vw; border-radius: 25px; color: white;background-color: brown;"> get your queries resolved &rarr; </button></a>
+
+      </div>
+
+      <br>
+      <br>
+
+
+      <div class="embedsocial-hashtag" data-ref="e64b731350f69877ee833615f2a2586ac1b17d37" style="z-index: -999;"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"><span>→</span> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+
+
+      <!--========== FOOTER ==========-->
+      
+         
+      <footer class = "footer">
+        <!-- Contact information -->
+        <p>Phone: +91-8754476660</p>
+        <p>Email: <a href="mailto:kraftretaildine@gmail.com">kraftretaildine@gmail.com</a></p>
+        <p>Address: CMRL HQ, Nandanam & ECR, Kanathur</p>
+      
+       
+        <a href="https://www.instagram.com/kraft_dine/" target="_blank">
+        
+        </a>
+        Follow us on Instagram: <a href="https://www.instagram.com/kraft_dine/" target="_blank">@kraft_dine</a>
+      </footer>
+      
+
+
+
+
+    <script>
+
+        let menuBox  = document.getElementById("menuBox");
+        let menuIcon  = document.getElementById("menuIcon");
+        menuIcon.onclick = function(){
+            menuBox.classList.toggle("open-menu");
+
+            if(menuBox.classList.contains("open-menu")){
+                menuIcon.src = "assets/navbar/close.png"
+            }
+            else{
+                menuIcon.src = "assets/navbar/menu.png"
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

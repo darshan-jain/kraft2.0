@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif !important;
+    box-sizing: border-box;
+    
+}
+.container{
+    width:100wh;    
+    background-size: cover;
+    background-position: center;
+}
+
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin:2%;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+ 
+.services {
+    block-size:100%;
+    scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.h1{
+    
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+#menuIcon {
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.menu-box{
+    width:0;
+    height: 0;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 100%;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+
+}
+
+.menu-box.open-menu{
+    width:100%;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+
+}
+
+.menu-box.open-menu ul li{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.5s;
+
+}
+
+
+.menu-box ul li{
+    list-style:none;
+    margin:30px;
+    text-align: center;
+    
+    opacity: 0;
+    transform: translateY(30px);
+
+}
+
+
+.menu-box ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    position:relative;
+    text-shadow: 0 0 0 grey;
+    transition: text-shadow 0.5s, transform 0.5s;
+}
+
+.menu-box ul li a:hover{
+    text-shadow: -3px 3px 0 brown;
+    transform: translateY(-6px);
+}
+
+.menu-box ul li a::after{
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position:absolute;
+    bottom: 19px;
+    right: -18px;
+    opacity: 0;
+    box-shadow: 0 0 0 brown;
+    transition: box-shadow 0.5s;
+
+}
+.menu-box ul li a:hover::after{
+    opacity: 1;
+    box-shadow: -2px 2px 0 brown;
+}
+
+.responsive-three-columns {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* columns */
+.responsive-three-columns > * {
+    width:100%;
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-three-columns > * {
+        width:calc(100% / 3);
+    }
+}
+
+
+/* Container holding the image and the text */
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -999;
+  }
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .centered_sbelow {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .centered_ssbelow {
+  position: absolute;
+  bottom: 8px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  }
+
+
+
+  .centered_below {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .centered2 {
+    position: absolute;
+    color: #E9DCC9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+
+  
+  
+
+  .centered_sssbelow {
+    position: absolute;
+    bottom: 8px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    }
+  
+
+
+    .container4{
+        margin-left: 5%;
+        margin-right:5%;
+
+    }
+  
+  
+.footer {
+    background-color:lightgrey;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer.instagram-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  
+  

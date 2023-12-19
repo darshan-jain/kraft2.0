@@ -116,7 +116,7 @@
 }
 
 .menu-box ul li a:hover{
-    text-shadow: -3px 3px 0 brown;
+    text-shadow: -3px 3px 0 #466D1D;
     transform: translateY(-6px);
 }
 
@@ -130,13 +130,13 @@
     bottom: 19px;
     right: -18px;
     opacity: 0;
-    box-shadow: 0 0 0 brown;
+    box-shadow: 0 0 0 #466D1D;
     transition: box-shadow 0.5s;
 
 }
 .menu-box ul li a:hover::after{
     opacity: 1;
-    box-shadow: -2px 2px 0 brown;
+    box-shadow: -2px 2px 0 #466D1D;
 }
 
 .responsive-three-columns {
